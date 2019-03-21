@@ -5,22 +5,23 @@ $gender = 'homme';
 <html lang="fr" dir="ltr">
 <head>
   <meta charset="utf-8" />
-  <title>PHP - PARTIE2 - EXO5</title>
+  <title>PHP - PARTIE 2 - EXO 5</title>
 </head>
 <body>
-  <h1>Traduire ce code avec des if et des else :
+  <h1>PHP - PARTIE 2 - EXO 5</h1>
+    <p><strong>Traduire ce code avec des if et des else : </strong></p>
     <!--
     < ? php
     echo ($gender != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';
     ?> -->
-  </h1>
+
   <?php
   if ($gender != 'homme')
-  {
-    echo 'C\'est une développeuse.';
-  }else{
-    echo 'C\'est un développeur.';
-  }
+  { ?>
+    <p>C'est une développeuse.</p>
+  <?php }else{ ?>
+    <p>C'est un développeur.</p>
+  <?php }
   ?>
 </body>
 </html>

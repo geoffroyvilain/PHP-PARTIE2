@@ -1,18 +1,18 @@
-<?php
-  $magnitude = 5;
- ?>
+<?php $magnitude = rand(1,9); ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>PHP - PARTIE2 - EXO4</title>
+    <title>PHP - PARTIE 2 - EXO 4</title>
   </head>
   <body>
-    <h1>L'échelle de Richter est un outil de mesure qui permet de définir la magnitude de moment d'un tremblement de terre. Cette échelle va de 1 à 9.
-Créer une variable magnitude. Selon la valeur de magnitude, afficher la phrase correspondante.</h1>
+    <h1>PHP - PARTIE 2 - EXO 4</h1>
+     <p><strong>L'échelle de Richter est un outil de mesure qui permet de définir la magnitude de moment d'un tremblement de terre. Cette échelle va de 1 à 9.</strong></p>
+     <p><strong>Créer une variable magnitude. Selon la valeur de magnitude, afficher la phrase correspondante.</strong></p>
     <?php
-switch ($magnitude)
-{
+/* break pour arreter le switch si la condition est remplie
+defaut, équivalent du else, pour une réponse hors sujet */
+switch ($magnitude) {
   case 1:
     echo 'Micro-séisme impossible à ressentir.';
   break;
@@ -40,6 +40,8 @@ switch ($magnitude)
   case 9:
     echo 'Séisme capable de tout détruire sur une très vaste zone.';
   break;
+  default :
+  echo 'Merci de rentrer un niveau entre 1 et 9';
 }
      ?>
   </body>
